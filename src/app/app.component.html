@@ -1,0 +1,51 @@
+<div>
+<div class="container1">
+  <a class="navbar-brand" *ngIf="videoMinimized" href="#">
+        <img class="img" src="../assets/Images/Logo png.png" alt="Logo">
+       </a> 
+      <!-- <h4 class="h4">Charith Boddu</h4> -->
+  <!-- <img  class="img1" style="margin-left: auto;" src="../../../assets/Images/pngwing.com.png" > -->
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <p class="nav-link" [routerLink]="['/Home']" routerLinkActive="active" >Home</p>
+    </li>
+    <li class="nav-item">
+      <p class="nav-link" [routerLink]="['/About']" routerLinkActive="active">About</p>
+    </li>
+    <li class="nav-item">
+      <p class="nav-link" [routerLink]="['/Projects']" routerLinkActive="active">Projects</p>
+    </li>
+    <li class="nav-item">
+      <p class="nav-link"[routerLink]="['/Contact']" routerLinkActive="active">Contact</p>
+    </li>
+  </ul>
+</div>
+
+<div class="container2"  *ngIf="!videoMinimized">
+  <video #videoPlayer width="640" height="360" >
+    <source src="../assets/Images/Logo 1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<!-- <div class="container">
+  <a class="navbar-brand" href="#">
+    <div class="logo" *ngIf="videoMinimized" (click)="redirectHome()">
+      <img style="width: 75px;;" src="../assets/Images/Logo png.png" alt="Logo">
+    </div>    </a>
+</div> -->
+
+</div>
+
+<div class="row" *ngIf="videoMinimized">
+  <div class="col-md-12">
+    <div class="profile-img" id="home">
+      <div class="img-content"></div>
+      <div class="container text-center">
+        <div class="card">
+            <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      

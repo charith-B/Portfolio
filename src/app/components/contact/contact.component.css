@@ -1,0 +1,57 @@
+.card {
+    margin: 20px;
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+  
+  .container {
+    /* display: flex; */
+    min-height: 60vh; /* expand height to center contents */
+    height: 60vh;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically*/
+    background-image: url(../../../assets/Images/street-background.jpg);
+    background-size: cover;
+  }
+  .content{
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+  }
+  .me{
+    color: red;
+}
+.text{
+    font-size:40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+  .fancy_card {
+    font-family: Roboto, sans-serif;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    overflow: hidden; /* otherwise header image won't respect rounded corners */
+    background: #e7e0e0;
+    transition: all .5s ease; /* back to normal */
+    margin: 20px;
+    padding: 15px;
+  }
+  .fancy_card:hover {
+    transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+    transition: all .4s ease; /* zoom in */
+    cursor: pointer;
+  }
+  
+  .card_image {
+    width: 20%; /* forces image to maintain its aspect ratio; otherwise image stretches vertically */
+  }
+  
+  .card_text {
+    padding: 20px 13px 10px 16px;
+  }
+  .logo{
+    width: 49px;
+  }

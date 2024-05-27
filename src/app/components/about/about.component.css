@@ -1,0 +1,22 @@
+.card{
+    margin: 20px;
+}
+.hi{
+    font-size:30px;
+    font-weight: 700;
+}
+.me{
+    color: red;
+}
+.text{
+    font-size:40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.txt{
+    text-align: left;
+    padding: 40px;
+}
+.img{
+    height: 75vh;
+}

@@ -1,0 +1,36 @@
+.greeting{
+    /* display: flex; */
+    margin-left: 10px;
+}
+.HiImg{
+    width: 50px; 
+    margin-right:10px; 
+    align-items: center;
+}
+.hi{
+    font-size:30px;
+    font-weight: 700;
+}
+.name{
+    font-size:50px;
+    font-weight: 900;
+}
+.card{
+    margin: 20px;
+    background-image: url("../../../assets/Images/desk.jpg");
+    background-size: cover;
+    text-align: right;
+}
+.left-half{
+padding: 10px;
+}
+.right-half{
+    padding: 10px;
+
+}
+.highlight{
+    display: inline-block;
+    font-size:50px;
+    font-weight: 900;
+    color: red;
+}
